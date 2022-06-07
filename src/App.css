@@ -1,0 +1,15 @@
+.verse {
+  padding-bottom: 50px;
+}
+
+.chord {
+  color: red;
+}
+
+.lyrics {
+  padding: 0px;
+}
+
+table.row {
+  border-spacing: 0px;
+}

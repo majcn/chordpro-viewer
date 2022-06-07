@@ -1,0 +1,32 @@
+{
+  "name": "monaco-react-test",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@material/react-fab": "^0.15.0",
+    "@monaco-editor/react": "^4.4.5",
+    "@types/lz-string": "^1.3.34",
+    "chordsheetjs": "^7.2.0",
+    "lodash.debounce": "^4.0.8",
+    "lz-string": "^1.4.4",
+    "query-string": "^7.1.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-reflex": "^4.0.9",
+    "react-toastify": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "monaco-editor": "^0.33.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}
