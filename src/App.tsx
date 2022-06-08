@@ -10,16 +10,16 @@ import Editor from "./components/editor";
 import Preview from "./components/preview";
 import SaveButton from "./components/save-button";
 import ContainerLayout from "./components/container-layout";
-import { writeSongToUrl } from "./util/uri-data";
+import { writeSongToUrl, copyToClipboard } from "./util";
 
 type Props = {
   initSong: string;
 };
 
-function onSaveClick(song: string) {
+function onSave(song: string) {
   writeSongToUrl(song);
 
-  navigator.clipboard.writeText(location.href);
+  copyToClipboard(location.href);
 
   toast("Povezava je skopirana v odložišče", {
     pauseOnHover: false,
@@ -35,13 +35,13 @@ function App({ initSong }: Props) {
   return (
     <>
       <ToastContainer />
-      <SaveButton onClick={() => onSaveClick(chordProSong)} />
+      <SaveButton onClick={() => onSave(chordProSong)} />
 
       <ContainerLayout>
         <Editor
           defaultValue={chordProSong}
           onChange={debounce((value) => setChordProSong(value ?? ""), 500)}
-          onSave={onSaveClick}
+          onSave={onSave}
         />
         <Preview song={chordProSong} />
       </ContainerLayout>
