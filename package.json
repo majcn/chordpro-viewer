@@ -8,8 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@material/react-fab": "^0.15.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@monaco-editor/react": "^4.4.5",
+    "@mui/material": "^5.8.3",
     "chordsheetjs": "^7.2.0",
     "lodash.debounce": "^4.0.8",
     "lz-string": "^1.4.4",

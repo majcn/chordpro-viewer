@@ -1,5 +1,4 @@
-import { Fab } from "@material/react-fab";
-import "@material/react-fab/dist/fab.css";
+import { Fab, SvgIcon } from "@mui/material";
 
 const SaveIcon = (
   <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
@@ -13,8 +12,10 @@ type Props = {
 
 export default ({ onClick }: Props) => (
   <Fab
+    color="primary"
     style={{ zIndex: 999, position: "fixed", bottom: "20px", right: "20px" }}
-    icon={SaveIcon}
     onClick={onClick}
-  />
+  >
+    <SvgIcon>{SaveIcon}</SvgIcon>
+  </Fab>
 );
