@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic');
+
 .verse {
   padding-bottom: 50px;
 }
 
 .chord {
-  color: red;
+  font-weight:  bold;
+  font-family: Source Sans Pro;
+  font-size:  0.9em;
+  color:  red;
+  transform: translate(0, 0.5em);
 }
 
 .lyrics {
   padding: 0px;
+  font-weight:  Italic;
+  font-family: Source Sans Pro;
+  color:  black;
 }
 
 table.row {
